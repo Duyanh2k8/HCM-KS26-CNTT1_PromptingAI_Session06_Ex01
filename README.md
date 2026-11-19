@@ -29,7 +29,7 @@ flowchart TD
     style D fill:#ffffff,stroke:#dadce0,color:#1f1f1f,rx:10,ry:10
     style E fill:#e6f4ea,stroke:#ceead6,color:#1f1f1f,rx:10,ry:10
 ```
-## 2.
+## 2. Thiết kế giải pháp I/O
 ### 2.1. Xác định Input (Dữ liệu đầu vào)
 Hệ thống cần các thông tin sau:
 |STT	|Dữ liệu đầu vào|	Mô tả|
