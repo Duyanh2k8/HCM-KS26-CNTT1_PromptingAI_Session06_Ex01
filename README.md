@@ -13,23 +13,18 @@ Thay vì phải tự tìm tài liệu, giải thích kiến thức và kiểm tr
 flowchart TD
     A["<b>Input</b><br/>Tài liệu học tập + Bài làm + Rubric chấm điểm"]
     B["<b>AI Study Assistant</b><br/>Phân tích dữ liệu và thực hiện 2 chức năng"]
-
-    subgraph Functions [" "]
-        direction LR
-        C["<b>Feynman Tutor</b><br/>Giải thích kiến thức dễ hiểu"]
-        D["<b>Rubric Grading</b><br/>Đánh giá và chấm điểm"]
-    end
-
+    C["<b>Feynman Tutor</b><br/>Giải thích kiến thức dễ hiểu"]
+    D["<b>Rubric Grading</b><br/>Đánh giá và chấm điểm"]
     E["<b>Output</b><br/>Bài giảng dễ hiểu + Bảng điểm + Nhận xét + Hướng cải thiện"]
 
     A --> B
-    B ~~~ Functions
-    Functions --> E
+    B --> C
+    B --> D
+    C,D --> E
 
     style A fill:#e8f0fe,stroke:#d2e3fc,color:#1f1f1f,rx:10,ry:10
     style B fill:#e6f4ea,stroke:#ceead6,color:#1f1f1f,rx:10,ry:10
     style C fill:#ffffff,stroke:#dadce0,color:#1f1f1f,rx:10,ry:10
     style D fill:#ffffff,stroke:#dadce0,color:#1f1f1f,rx:10,ry:10
     style E fill:#e6f4ea,stroke:#ceead6,color:#1f1f1f,rx:10,ry:10
-    style Functions fill:transparent,stroke:transparent
 ```
